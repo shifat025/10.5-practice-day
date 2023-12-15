@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>This is home page</h1>
+    <h1><a href="/first_app/">Home</a></h1>
+    <h1><a href="/first_app/About/">About</a></h1>
+    <h1><a href="/first_app/Contact/">Contact</a></h1>
+
+    <h2>Author : {{author}} </h2>
+    <h2>Age : {{age}}</h2>
+    {% if age > 20 %}
+    <h2>you get nid</h2>
+    {%else%}
+    <h2>you cant get nid</h2>
+    {%endif%}
+    
+    <h2>{{lst | join:" "}} </h2>
+    <h2>{{lst | length}} </h2>
+    <h2>{{lst | add:"2"}} </h2>
+    <h1>{{date | date:"SHORT_DATE_FORMAT"}} </h1>
+
+
+
+    
+</body>
+</html>
